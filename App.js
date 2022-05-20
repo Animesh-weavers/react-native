@@ -47,7 +47,7 @@ const App = () => {
         <Othercom tech="React Native" />
         <Othercom tech="React Native" />
       </View>
-      <View style={{padding:25}}>
+      <View style={{padding: 25}}>
         <CatApp />
       </View>
     </SafeAreaView>
