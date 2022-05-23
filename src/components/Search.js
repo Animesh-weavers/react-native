@@ -7,10 +7,11 @@ import FontAwesome, {
   parseIconFromClassName,
 } from 'react-native-fontawesome';
 import FontAwesome6 from 'react-native-vector-icons/FontAwesome';
+import {elevation} from '../common/styles';
 
 const Search = () => {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, styles.elevation]}>
       <FontAwesome6 name={'search'} size={25} style={{marginTop: 10}} />
       <TextInput style={styles.input} placeholder="Resturants, food" />
     </View>
@@ -23,14 +24,11 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginHorizontal: 25,
     backgroundColor: 'white',
-    shadowColor: 'black',
-    shadowOffset: {width: 5, height: 5},
-    elevation: 5,
-    shadowOpacity: 0.1,
     padding: 10,
     borderRadius: 40,
     overflow: 'hidden',
   },
+  elevation,
   input: {
     fontSize: 20,
     marginLeft: 10,
